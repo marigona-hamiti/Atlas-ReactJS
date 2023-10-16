@@ -1,0 +1,268 @@
+.dinning {
+    background-color: #141414;
+    top: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    .intro {
+      padding: 200px;
+      padding-bottom: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      flex-direction: column;
+  
+      div {
+        padding-top: 30px;
+        font-size: 97px;
+        color: #f6f6f2;
+      }
+  
+      p {
+        padding-top: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 36px;
+        color: #ffffff66;
+  
+        b {
+          color: #f6f6f2;
+        }
+      }
+    }
+  
+    .horse-wrapper {
+      margin: 0 auto;
+      justify-content: center;
+  
+      img {
+        width: 550px;
+        height: 650px;
+      }
+    }
+  
+    .data-astro {
+      padding: 20px;
+      width: 900px;
+      justify-content: center;
+      align-items: center;
+      color: rgb(248, 248, 248);
+  
+      div {
+        display: flex;
+        border-top: 1px solid rgb(176, 172, 172);
+        padding: 30px;
+        padding-left: 0px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+  
+        pre {
+          padding: 40px;
+          padding-left: 0px;
+          font-size: 28px;
+        }
+  
+        p {
+          font-size: 24px;
+          padding-right: 0px;
+          color: #ffffff66;
+        }
+      }
+  
+      .div3 {
+        border-bottom: 1px solid rgb(176, 172, 172);
+      }
+    }
+  
+    .table {
+      padding-top: 70px;
+  
+      img {
+        height: 640px;
+        width: 830px;
+        border-radius: 20px;
+      }
+  
+      p {
+        font-size: 12px;
+        color: white;
+      }
+    }
+  
+    .random-photos {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      flex-direction: row;
+      padding-top: 20px;
+      padding-bottom: 100px;
+  
+      div {
+        display: flex;
+        justify-content: center;
+        height: 550px;
+        width: 400px;
+        padding: 20px;
+        flex-direction: column;
+        color: white;
+        font-size: 12px;
+  
+        img {
+          border-radius: 20px;
+          max-width: 100%; /* Ensure the image doesn't overflow its container */
+          height: auto; /* Maintain aspect ratio */
+        }
+      }
+    }
+  
+@media (max-width: 768px) {
+  .intro {
+    padding: 40px;
+
+    div {
+      font-size: 90px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+  }
+
+  .horse-wrapper {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .data-astro {
+    padding: 0;
+    width: 650px;
+
+    div {
+      margin: 25px;
+      padding: 15px;
+
+      pre {
+        padding-right: 10px;
+        padding-left: 0px;
+        font-size: 20px;
+      }
+
+      p {
+        padding-left: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .table {
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      padding: 10px;
+      padding-top: 0px;
+    }
+  }
+
+  .random-photos {
+    display: flex;
+    padding: 0px;
+    margin: 20px;
+
+    div {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      p {
+        font-size: 8px;
+      }
+    }
+  }
+}
+
+    @media (max-width: 400px) {
+      .intro {
+        padding: 40px;
+  
+        div {
+          font-size: 60px;
+        }
+  
+        p {
+          font-size: 20px;
+        }
+      }
+  
+      .data-astro {
+        padding: 10px;
+        width: 100%;
+  
+        div {
+          display: flex;
+          padding: 10px;
+          margin: 0 auto;
+          justify-content: space-around;
+  
+          pre {
+            padding: 10px;
+            font-size: 12px;
+          }
+  
+          p {
+            padding: 10px;
+            font-size: 10px;
+          }
+        }
+      }
+  
+      .table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+          width: 80%;
+        }
+  
+        p {
+          font-size: 8px;
+        }
+      }
+  
+      .random-photos {
+        margin: 0;
+        padding: 0;
+  
+        div {
+          padding: 5px;
+  
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+          }
+  
+          p {
+            font-size: 7px;
+          }
+        }
+      }
+    }
+  }
+  

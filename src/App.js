@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import Atlas from './Pages/Atlas';
+import Dinning from './Pages/Dinning';
+import Travel from './Pages/Travel';
+import Card from './Pages/Card';
+import Concierge from './Pages/Concierge';
+import Benefits from './Pages/Benefits';
+import Visa from './Pages/Visa';
+import Header from "./Components/Header/Header";
+import AppPage from "./Pages/AppPage";
 
 function App() {
+  const headerStyle = {
+    position: 'sticky',
+    top: 0,
+    margin:0,
+    padding:0,
+    zIndex: '100', 
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <div style={headerStyle}>
+      <Header className='app-header' />
     </div>
+    <Routes>
+      <Route path="/" element={<Atlas />} />
+      <Route path="/dinning" element={<Dinning />} />
+      <Route path="/travel" element={<Travel />} />
+      <Route path="/card" element={<Card />} />
+      <Route path="/app" element={<AppPage />} />
+      <Route path="/concierge" element={<Concierge />} />
+      <Route path="/benefits" element={<Benefits />} />
+      <Route path="/visa" element={<Visa />} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 

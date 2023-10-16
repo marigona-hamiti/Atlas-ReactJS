@@ -1,0 +1,245 @@
+.card{
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .video{
+        width: 900px;
+        border-radius: 30px;
+
+    }
+
+    
+    .intro{
+        padding:200px ;
+        padding-bottom: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: column;
+        div{
+            padding-top: 40px;
+            font-size: 97px;
+            color: black;
+
+        }
+        p{
+            padding-top: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 36px;
+            color: #00000066;
+
+            b{
+                color: #000000;
+            }
+        }
+    }
+
+    .front-back{
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        div{
+            width: 100%;
+            padding: 50px 50px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            border-radius: 30px;
+            img{
+                width: 500px;
+                padding: 30px;
+            }
+        }
+        .front{
+            background-color: #474747;
+        }
+        .back{
+            background-color: #959595;
+        }
+    }
+
+    .data-astro{
+        padding: 40px;
+        width: 900px;
+        justify-content: center;
+        align-items: center;
+        color: #141414;
+        div{
+            display: flex;
+            border-top: 0.1cqmin solid rgb(176, 172, 172);
+            padding: 30px;
+            padding-left: 0px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            pre{
+                padding: 40px;
+                padding-left: 0px;
+                font-size: 28px;
+            }
+            p{
+                font-size: 24px;
+                padding-right: 0px;
+                color: #727272;
+                justify-content: center;
+
+            }
+        }
+        .div3{
+            border-bottom: 0.1cqmin solid rgb(176, 172, 172);
+        }
+    }
+
+}
+@media(max-width: 768px)
+{
+    .card{
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        .video{
+            width: 700px;
+        }
+
+        .intro{
+            padding: 0px;
+            margin: 0px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            div{
+                
+                font-size: 67px;
+            }
+            p{
+                font-size: 23px;
+                
+            }
+        }
+
+        .front-back{
+            flex-direction: column;
+            div{
+                width: 100%;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 10px;
+                display: flex;
+                justify-content: center;
+            }
+            img{
+                width: 100%;
+                padding: 0px;
+            }
+           
+        }
+
+        .data-astro{
+            width: 100%;
+            padding: 30px;
+            
+            div{
+                margin: 25px;
+                padding: 20px;
+                pre{
+                    padding-right: 10px;
+                    padding-left: 0px;
+                    font-size:18px;
+                }
+                p{
+                    padding-left: 20px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 390px)
+{
+    .card{
+
+        .intro {
+            padding-bottom: 30px;
+      
+            div {
+              font-size: 50px;
+            }
+      
+            p {
+              font-size: 15px;
+              padding: 30px;
+            }
+          }
+
+          .front-back{
+            margin: 0;
+            padding: 0;
+                  div{
+                padding: 0px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px;
+                  }
+            }
+          }
+
+          .random-photos {
+            margin: 0;
+            padding: 0;
+      
+            div {
+              padding: 5px;
+      
+              img {
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+              }
+      
+              p {
+                font-size: 7px;
+              }
+            }
+          }
+
+        .data-astro{
+            padding: 50px;
+            width: 90%;
+            div{
+                display: flex;
+                padding: 15px;
+                margin: 0 auto;
+                justify-content: space-around;
+                pre{
+                    padding: 0px;
+                    font-size: 10px;
+
+                }
+                p{
+
+                    padding: 10px;
+                    font-size: 10px;
+                }
+            }
+        }
+    
+    }
+}
